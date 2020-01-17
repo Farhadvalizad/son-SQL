@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
+            this.ckRemember = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,9 +61,9 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLogin.Location = new System.Drawing.Point(58, 492);
+            this.btnLogin.Location = new System.Drawing.Point(58, 527);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(160, 64);
+            this.btnLogin.Size = new System.Drawing.Size(160, 43);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -144,12 +145,25 @@
             this.lblError.Text = "Password";
             this.lblError.Visible = false;
             // 
+            // ckRemember
+            // 
+            this.ckRemember.AutoSize = true;
+            this.ckRemember.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckRemember.ForeColor = System.Drawing.Color.DeepPink;
+            this.ckRemember.Location = new System.Drawing.Point(58, 483);
+            this.ckRemember.Name = "ckRemember";
+            this.ckRemember.Size = new System.Drawing.Size(126, 22);
+            this.ckRemember.TabIndex = 12;
+            this.ckRemember.Text = "Remember Me";
+            this.ckRemember.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(996, 650);
+            this.Controls.Add(this.ckRemember);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPassword);
@@ -181,6 +195,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.CheckBox ckRemember;
     }
 }
 

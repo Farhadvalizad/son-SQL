@@ -13,23 +13,24 @@ namespace ShopApp_K300
 {
     public partial class Form1 : Form
     {
-
         ShopDb db = new ShopDb();
         public Form1()
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             btnLogin.Location = new Point((this.ClientSize.Width - lblWelocome.Size.Width) / 2, this.ClientSize.Height - 100);
             lblWelocome.Text = "Welcome to Nestle";
             lblWelocome.Location = new Point((this.ClientSize.Width - lblWelocome.Size.Width) / 2, 50);
-            
+            if (Properties.Settings.Default.isCheckid)
+            {
+                txtEmail.Text = Properties.Settings.Default.email;
+                txtPassword.Text = Properties.Settings.Default.password;
+            }
         }
         public void LoginDashboard()
         {
-            
                 string email = txtEmail.Text;
                 string password = txtPassword.Text;
                 if (email != "" && password != "")
@@ -50,7 +51,21 @@ namespace ShopApp_K300
                         lblError.Visible = false;
                         if (selecedWorker.Password == password)
                         {
-                            WorkerDashboard wrk = new WorkerDashboard();
+                        if (ckRemember.Checked)
+                        {
+                            Properties.Settings.Default.email = txtEmail.Text;
+                            Properties.Settings.Default.password = txtPassword.Text;
+                            Properties.Settings.Default.isCheckid= true;
+                            Properties.Settings.Default.Save();
+                        }
+                        else
+                        {
+                            Properties.Settings.Default.email = "";
+                            Properties.Settings.Default.password = "";
+                            Properties.Settings.Default.isCheckid = false;
+                            Properties.Settings.Default.Save();
+                        }
+                        WorkerDashboard wrk = new WorkerDashboard();
                             wrk.ShowDialog();
                         }
                         else
@@ -64,8 +79,6 @@ namespace ShopApp_K300
                         lblError.Text = "Email dosen't correct";
                         lblError.Visible = true;
                     }
-
-
                 }
                 else
                 {
@@ -73,12 +86,10 @@ namespace ShopApp_K300
                     lblError.Visible = true;
                 }
             }
-        
     private void btnLogin_Click(object sender, EventArgs e)
         {
             LoginDashboard();
         }
-
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar==13)
