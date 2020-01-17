@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\ShopApp-K300.exe.config
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\ShopApp-K300.exe
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\ShopApp-K300.pdb
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp-K300.csprojAssemblyReference.cache
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp_K300.Form1.resources
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp_K300.Properties.Resources.resources
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp-K300.csproj.GenerateResource.cache
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp-K300.exe
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp-K300.pdb
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp_K300.Register_Form.resources
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp-K300.csproj.CopyComplete
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp_K300.AdminDashboard.resources
+C:\Users\User\source\repos\ShopApp-K300\ShopApp-K300\obj\Debug\ShopApp_K300.NewProduct.resources
